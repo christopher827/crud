@@ -15,7 +15,7 @@ UserModel.find({})
 })
 
 app.get('/getUser/:id',(req,res)=>{
-    const id=req.params.id;
+const id=req.params.id;
     UserModel.findById({_id:id})
     .then(users=>res.json(users))
     .catch(err=>res.json(err))
