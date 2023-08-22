@@ -10,7 +10,7 @@ mongoose.connect("mongodb://127.0.0.1:27017/crud")
 
 app.get('/',(req,res)=>{
 UserModel.find({})
-    .then(users=>res.json(users))
+.then(users=>res.json(users))
     .catch(err=>res.json(err))
 })
 
