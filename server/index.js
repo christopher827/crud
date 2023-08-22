@@ -30,7 +30,7 @@ UserModel.create(req.body)//Adds the data received  in the body of an HTTP reque
 app.put("/updateUser/:id",(req,res)=>{
 const id=req.params.id;
 UserModel.findByIdAndUpdate({_id:id},{
-        name:req.body.name,     
+name:req.body.name,     
         email:req.body.email,
         age:req.body.age})
     .then(users=>res.json(users)) 
