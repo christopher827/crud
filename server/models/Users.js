@@ -4,5 +4,5 @@ name:String,
 email:String,
 age:Number
 })
-const UserModel=mongoose.model("users",userSchema)
+cons UserModel=mongoose.model("users",userSchema)
 module.exports=UserModel
